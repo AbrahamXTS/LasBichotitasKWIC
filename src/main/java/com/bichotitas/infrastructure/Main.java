@@ -1,4 +1,4 @@
-package com.bichotitas;
+package com.bichotitas.infrastructure;
 
 public class Main {
     public static void main(String[] args) {

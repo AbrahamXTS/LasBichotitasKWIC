@@ -23,7 +23,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.bichotitas.Main</mainClass>
+                            <mainClass>com.bichotitas.infrastructure.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
