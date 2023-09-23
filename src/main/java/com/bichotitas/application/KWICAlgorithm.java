@@ -1,8 +1,6 @@
 package com.bichotitas.application;
 
 import java.util.List;
-import java.util.stream.Collectors;
-
 
 public class KWICAlgorithm {
 
@@ -14,10 +12,9 @@ public class KWICAlgorithm {
 
     public List<String> deleteStopWords(List<String> words){
 
-        List<String> filteredWords = words.stream()
+        return words.stream()
                 .filter(word -> !stopWords.contains(word))
-                .collect(Collectors.toList());
+                .toList();
         
-        return filteredWords;
     }
 }
