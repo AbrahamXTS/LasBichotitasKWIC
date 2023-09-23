@@ -10,6 +10,11 @@ public class KWICAlgorithm {
         this.stopWords = stopWords;
     }
 
+    public String toLowerCase(String sentence){
+
+        return sentence.toLowerCase();
+    }
+
     public List<String> deleteStopWords(List<String> words){
 
         return words.stream()
