@@ -1,17 +1,23 @@
 package com.bichotitas.application;
 
-import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
-import com.bichotitas.domain.commons.FileReader;
 
 public class KWICAlgorithm {
-    
-    public String[] deleteStopWords(String[] words){
-        List<String> fileContent = new FileReader("stop-words.txt").getFileContent();
 
-        return Arrays.stream(words)
-                .filter(word -> !fileContent.contains(word))
-                .toArray(String[]::new);
+    private List<String> stopWords;
+
+    public KWICAlgorithm(List<String> stopWords){
+        this.stopWords = stopWords;
+    }
+
+    public List<String> deleteStopWords(List<String> words){
+
+        List<String> filteredWords = words.stream()
+                .filter(word -> !stopWords.contains(word))
+                .collect(Collectors.toList());
+        
+        return filteredWords;
     }
 }
