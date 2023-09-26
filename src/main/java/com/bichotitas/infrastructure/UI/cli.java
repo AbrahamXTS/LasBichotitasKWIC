@@ -5,11 +5,11 @@ import java.util.Scanner;
 import com.bichotitas.application.KWICAlgorithm;
 
 
-public class cli {
+public class CLI {
 
     private KWICAlgorithm kwicAlgorithm;
 
-    public cli(KWICAlgorithm kwicAlgorithm) {
+    public CLI(KWICAlgorithm kwicAlgorithm) {
         this.kwicAlgorithm = kwicAlgorithm;
     }
 
