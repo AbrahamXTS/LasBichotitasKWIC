@@ -1,4 +1,4 @@
-package com.bichotitas.domain.commons;
+package com.bichotitas.utils;
 
 import java.io.File;
 import java.util.ArrayList;
